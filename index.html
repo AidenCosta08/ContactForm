@@ -29,14 +29,18 @@
             <p>
                 <label for="query">Query Type</label>
             </p>
+
+            <div class="query-container">
+                <div class="query-box">
+                    <input type="radio" name="query" id="generalEnquiry" autocomplete="on" required autofocus>
+                    <label for="generalEnquiry">General Enquiry</label>
+                </div>
+                <div class="query-box">
+                    <input type="radio" name="query" id="supportRequest" autocomplete="on" required autofocus>
+                    <label for="supportRequest">Support Request</label>
+                </div>
+            </div>   
             
-            <p >
-                <input type="radio" name="query" id="query" autocomplete="on" required autofocus>
-                <label for="query">General Enquiry</label>
-                <input type="radio" name="query" id="request" autocomplete="on" required autofocus>
-                <label for="request">Support Request</label>
-            </p>
-                
             <p>
                 <label for="message">Message</label>
             </p>
@@ -46,7 +50,7 @@
 
             <p>
                 <input type="checkbox" name="contact" id="contact" autocomplete="on" required autofocus>
-                <label for="contact">I consent to being contacted by the team</label>
+                <label for="contact">&nbsp;&nbsp;I consent to being contacted by the team</label>
             </p>
 
             <p>
