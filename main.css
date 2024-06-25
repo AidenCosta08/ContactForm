@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
-body div{
+body .container{
     box-sizing: border-box;
     font-family: "Karla";
     color:rgb(0, 40, 0);
@@ -35,7 +35,8 @@ form p{
     height: 40px;
     border-radius: 5px;
     border-width: 1px;
-    font-size: 20px;
+    
+    font-size: 15px;
 }
 
 .container label[for="firstName"]{
@@ -47,21 +48,56 @@ form p{
     height: 40px;
     border-radius: 5px;
     border-width: 1px;
+    margin-bottom: 10px;
 }
 
 .container textarea[type="text"]{
     resize: none;
-    width: 94%;
+    width: 98%;
     height: 80px;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .container input[name="firstName"] {
     margin-right: 10px;
 }
 
-.container [id="query"] {
-    background-color: greenyellow;
+.query-box {
+    display: flex;
+    padding: 10px;
+    border: 1px solid;
     border-radius: 5px;
-    border-width: 1px;
+    background-color: #fff;
+    cursor: pointer;
+    flex: 1;
+    margin-right: 10px;
+    padding-left: 20px;
+}
+
+.query-box:hover {
+    background-color: #f1f1f1;
+    
+}
+
+.query-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.container input[type="submit"]{
+    width: 98%;
+    height: 50px;
+    border-radius: 5px;
+    border-width: 0px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.container input[type="submit"]:hover{
+    background-color: #347437;
+    cursor: pointer;
 }
