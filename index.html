@@ -7,24 +7,52 @@
     <link rel="stylesheet" href="main.css" type="text/css">
  </head>
  <body>
-    <div class="contact">
-        <h1>
-            Contact Form 
-        </h1>
-    </div>
-    <form>
-        <fieldset>
+    <div class="container">
+        <form>
+            <h1>
+                Contact Us 
+            </h1>
             <p>
-                <label for="firstName">First Name</label>
+                <label for="firstName">First Name</label>  
+                <label for="lastName">Last Name</label>
                 <p>
-                <input type="text" name="firstName" id="firstName" autocomplete="on" required autofocus>
-                </p>
-                <label for="lastName">lastName</label>
-                <p>
-                <input type="text" name="lastName" id="lastName" autocomplete="on" required autofocus>
+                    <input type="text" name="firstName" id="firstName" autocomplete="on" required autofocus>
+                    <input type="text" name="lastName" id="lastName" autocomplete="on" required autofocus>
                 </p>
             </p>
-        </fieldset>
-    </form>
+                
+                <label for="email">Email Address</label>
+            <p>
+                <input type="email" name="email" id="email" autocomplete="on" required autofocus>
+            </p>
+            
+            <p>
+                <label for="query">Query Type</label>
+            </p>
+            
+            <p >
+                <input type="radio" name="query" id="query" autocomplete="on" required autofocus>
+                <label for="query">General Enquiry</label>
+                <input type="radio" name="query" id="request" autocomplete="on" required autofocus>
+                <label for="request">Support Request</label>
+            </p>
+                
+            <p>
+                <label for="message">Message</label>
+            </p>
+            <p>
+                <textArea type="text" name="message" id="message" autocomplete="on" required autofocus></textarea> 
+            </p>
+
+            <p>
+                <input type="checkbox" name="contact" id="contact" autocomplete="on" required autofocus>
+                <label for="contact">I consent to being contacted by the team</label>
+            </p>
+
+            <p>
+                <input type="submit" value="Submit">
+            </p>
+        </form>
+    </div>
  </body>
  </html>
